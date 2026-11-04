@@ -38,15 +38,92 @@ nav ul {
 }
 
 /* Hoveddel */
+
+/* HERO-SEKSJON */
 .ind-hero {
-    padding: 100px 30px;
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+    background-color: #111111;
+    overflow: hidden;
+
+    /* Innstillinger for videobeskjæring */
+    --video-x: 50%;
+    --video-y: 60%;
+    --video-zoom: 1;
 }
 
-.ind-hero h1 {
-    font-size: 48px;
+/* BAKGRUNNSVIDEO */
+.hero-video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: var(--video-x) var(--video-y);
+    transform: scale(var(--video-zoom));
+
+    z-index: 0;
 }
 
+/* MØRKT LAG OVER VIDEOEN */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* LOGO OG TEKST */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+/* SKJULT OVERSKRIFT FOR SKJERMLESERE */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* REDUSERT BEVEGELSE */
+@media (prefers-reduced-motion: reduce) {
+    .hero-video {
+        display: none;
+    }
+}
+
+/* Stor logo på forsiden */
+.hero-logo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
 /* Tjenester og portefølje */
 .ind-tjenester,
 .ind-portefolje {
@@ -88,7 +165,13 @@ footer p {
         padding: 0;
     }
 
-    .hero h1 {
+    .ind-hero h1 {
         font-size: 32px;
     }
+
+    footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
 }

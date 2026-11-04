@@ -27,10 +27,44 @@
     <main>
 
         <!-- Øverste del av forsiden -->
+
+
         <section class="ind-hero">
-            <h1>Henriksen Lyd- og Sceneproduksjon</h1>
-            <p>Lyd- og sceneteknikk i Trondheim.</p>
+
+            <!-- Bakgrunnsvideo -->
+            <video class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-hidden="true">
+                <source src="images/VideoJoaosis720p.mp4" type="video/mp4">
+            </video>
+
+            <!-- Mørkt lag over videoen -->
+            <div class="hero-overlay"></div>
+
+            <!-- Logo og tekst foran videoen -->
+            <div class="hero-content">
+
+                <h1 class="visually-hidden">
+                    Henriksen Lyd- og Sceneproduksjon
+                </h1>
+
+                <img
+                    src="Henriksen_logoer_SVG/Henriksen_hvit_logo_transparent.svg"
+                    alt=""
+                    class="hero-logo"
+                >
+
+                <p>Lyd- og sceneteknikk i Trondheim.</p>
+
+            </div>
+
         </section>
+
+
 
         <!-- Informasjon om tjenester -->
         <section class="ind-tjenester">
