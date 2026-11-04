@@ -1,8 +1,40 @@
+/*global*/
+body {
+    font-family: inter, sans-serif;
+    background-color: #FFFFFF;
+}
+
 /*topp og bunn bar*/
 
 /*index*/
 
 /*informasjon*/
+.inf-seksjon {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+}
+.inf-titel {
+    font-size: 30px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 20px;
+}
+.inf-tekst {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+.inf-bilde-boks {
+    position: relative;
+    width: 100%;
+}
+.inf-bilde {
+    max-width: 100%;
+    height: auto;
+}
 
 /*portofolio*/
 
