@@ -1,12 +1,6 @@
 /*global*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #FFFFFF;
-}
-
-/*topp og bunn bar*/
 
 /* Generelle innstillinger */
 body {
@@ -73,6 +67,49 @@ nav ul {
     display: flex;
     gap: 30px;
     list-style: none;
+}
+
+/*Karusell*/
+.karusell {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.karusell-bilde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.karusell-bilde.aktiv {
+    opacity: 1;
+}
+.karusell-knapp {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+.karusell-knapp#forrige {
+    left: 10px;
+}
+.karusell-knapp#neste {
+    right: 10px;
+}
+.karusell-knapp:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Hoveddel */
