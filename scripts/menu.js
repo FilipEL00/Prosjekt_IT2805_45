@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
 
                     <li>
-                        <a href="about.html">OM MEG</a>
+                        <a href="information.html">OM MEG</a>
                     </li>
 
                     <li>
