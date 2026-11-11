@@ -4,7 +4,377 @@
 
 /*informasjon*/
 
-/*portofolio*/
+/* =====================================
+   PORTFOLIO PAGE
+   ===================================== */
+
+/* Introduction */
+
+.portfolio-intro {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.portfolio-intro h2 {
+    font-size: 32px;
+    color: #234a76;
+    margin-bottom: 15px;
+}
+
+.portfolio-intro h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.portfolio-intro p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Portfolio sections */
+
+.portfolio-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.portfolio-section h2 {
+    font-size: 28px;
+    color: #234a76;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-section > p {
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Portfolio grid using CSS Grid */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Portfolio cards */
+
+.portfolio-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-card h3 {
+    font-size: 21px;
+    color: #234a76;
+    margin-bottom: 10px;
+}
+
+.portfolio-card h4 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.portfolio-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Dates */
+
+.portfolio-date {
+    font-weight: bold;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Skills */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #e8eef5;
+    color: #234a76;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Selected work */
+
+.portfolio-work {
+    text-align: center;
+}
+
+.portfolio-work h3 {
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+
+.portfolio-button {
+    display: inline-block;
+    background-color: #234a76;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-button:hover {
+    background-color: #163451;
+}
+
+.portfolio-button:focus-visible {
+    outline: 3px solid #4a90e2;
+    outline-offset: 3px;
+}
+
+/* Contact section */
+
+.portfolio-contact {
+    background-color: #e8eef5;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.portfolio-contact h2 {
+    color: #234a76;
+    margin-bottom: 20px;
+}
+
+.portfolio-contact p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .portfolio-section {
+        padding: 20px;
+    }
+
+    .portfolio-intro h2 {
+        font-size: 28px;
+    }
+}
+
+/* Mobile devices */
+
+@media (max-width: 600px) {
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-intro {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .portfolio-intro h2 {
+        font-size: 25px;
+    }
+
+    .portfolio-intro h3 {
+        font-size: 21px;
+    }
+
+    .portfolio-section {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .portfolio-section h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-card {
+        padding: 20px;
+    }
+
+    .skills-list li {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .portfolio-contact {
+        padding: 35px 15px;
+    }
+
+    .portfolio-button {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+
 
 /*contact*/
+
+.contact {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+
+.contact h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Form layout */
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+
+.contact .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input fields and textarea */
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Focus styling */
+
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 1px;
+}
+
+/* Textarea */
+
+.contact .form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Submit button */
+
+.contact button[type="submit"] {
+    background-color: #234a76;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #163451;
+}
+
+/* Contact information */
+
+.contact-info {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .contact {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .contact h3 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .contact h3 {
+        font-size: 21px;
+    }
+
+    .contact button[type="submit"] {
+        width: 100%;
+    }
+}
 

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontakt oss</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Header og navigasjon -->
+
+    <header>
+        <h1>Kontakt oss</h1>
+
+        <nav aria-label="Hovedmeny">
+            <a href="index.html">Hjem</a>
+            <a href="information.html">Informasjon</a>
+            <a href="portfolio.html">Portefølje</a>
+            <a href="contact.html" aria-current="page">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- Hovedinnhold -->
+
+    <main>
+
+        <section class="contact">
+
+            <h2>Kontaktskjema</h2>
+
+            <p>
+                Har du spørsmål eller ønsker hjelp med et prosjekt?
+                Fyll ut skjemaet nedenfor for å ta kontakt.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- Navn -->
+
+                <div class="form-group">
+                    <label for="name">Fullt navn:</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Ditt fulle navn"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <!-- E-postadresse -->
+
+                <div class="form-group">
+                    <label for="email">E-postadresse:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Din e-postadresse"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <!-- Prosjekttittel -->
+
+                <div class="form-group">
+                    <label for="title">Prosjekttittel:</label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        placeholder="Tittel på prosjektet"
+                        required>
+                </div>
+
+                <!-- Ønsket dato -->
+
+                <div class="form-group">
+                    <label for="date">
+                        Ønsket dato for prosjektet (valgfritt):
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date">
+                </div>
+
+                <!-- Prosjektbeskrivelse -->
+
+                <div class="form-group">
+                    <label for="description">Prosjektbeskrivelse:</label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="6"
+                        placeholder="Beskriv prosjektet ditt..."
+                        required></textarea>
+                </div>
+
+                <!-- Send-knapp -->
+
+                <button type="submit">
+                    Send henvendelse
+                </button>
+
+            </form>
+
+            <!-- Kontaktinformasjon -->
+
+            <div class="contact-info">
+
+                <h2>Kontaktinformasjon</h2>
+
+                <p>
+                    <strong>E-post:</strong>
+                    <a href="mailto:henriksen@gmail.com">
+                        henriksen@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Org.nr:</strong> 931 764 551
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>&copy; 2026. Alle rettigheter forbeholdt.</p>
+    </footer>
+
+</body>
+</html>
