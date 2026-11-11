@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        
         // Check HTML5 validity as well
         if (!form.checkValidity()) {
             event.preventDefault();
@@ -121,7 +122,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Validation successful
-        // The form is submitted using its configured action.
+        event.preventDefault();
+
+        alert(
+            "Skjemaet er validert! " +
+            "Dette er en demonstrasjon, " +
+            "og ingen e-post er sendt."
+        );
+
     });
 
 });
