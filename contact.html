@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kontakt oss</title>
+    <title>Kontakt | Henriksen Lyd- og Sceneproduksjon</title>
 
+    <!-- Felles CSS-fil -->
     <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     <!-- Header og navigasjon -->
 
     <header>
-        <h1>Kontakt oss</h1>
+        <h1>Henriksen Lyd- og Sceneproduksjon</h1>
 
         <nav aria-label="Hovedmeny">
             <a href="index.html">Hjem</a>
@@ -32,89 +34,34 @@
 
         <section class="contact">
 
-            <h2>Kontaktskjema</h2>
+            <h2>Kontakt oss</h2>
 
             <p>
-                Har du spørsmål eller ønsker hjelp med et prosjekt?
-                Fyll ut skjemaet nedenfor for å ta kontakt.
+                Har du spørsmål eller ønsker hjelp med
+                lydteknikk, rigging eller sceneproduksjon?
+                Ta gjerne kontakt for en uforpliktende samtale.
             </p>
 
-            <form action="#" method="post">
+            <h3>Send en prosjektforespørsel</h3>
 
-                <!-- Navn -->
+            <p>
+                Har du et arrangement eller et prosjekt
+                du trenger teknisk hjelp med?
+            </p>
 
-                <div class="form-group">
-                    <label for="name">Fullt navn:</label>
+            <p>
+                Klikk på knappen nedenfor for å åpne
+                e-postprogrammet ditt med en ferdig
+                utfylt mal for prosjektforespørsel.
+            </p>
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Ditt fulle navn"
-                        autocomplete="name"
-                        required>
-                </div>
+            <!-- Mailto-knapp -->
 
-                <!-- E-postadresse -->
-
-                <div class="form-group">
-                    <label for="email">E-postadresse:</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Din e-postadresse"
-                        autocomplete="email"
-                        required>
-                </div>
-
-                <!-- Prosjekttittel -->
-
-                <div class="form-group">
-                    <label for="title">Prosjekttittel:</label>
-
-                    <input
-                        type="text"
-                        id="title"
-                        name="title"
-                        placeholder="Tittel på prosjektet"
-                        required>
-                </div>
-
-                <!-- Ønsket dato -->
-
-                <div class="form-group">
-                    <label for="date">
-                        Ønsket dato for prosjektet (valgfritt):
-                    </label>
-
-                    <input
-                        type="date"
-                        id="date"
-                        name="date">
-                </div>
-
-                <!-- Prosjektbeskrivelse -->
-
-                <div class="form-group">
-                    <label for="description">Prosjektbeskrivelse:</label>
-
-                    <textarea
-                        id="description"
-                        name="description"
-                        rows="6"
-                        placeholder="Beskriv prosjektet ditt..."
-                        required></textarea>
-                </div>
-
-                <!-- Send-knapp -->
-
-                <button type="submit">
-                    Send henvendelse
-                </button>
-
-            </form>
+            <a
+                class="mailto-knapp"
+                href="mailto:henriksenlyd@gmail.com?subject=Prosjektforesp%C3%B8rsel&amp;body=Navn:%0D%0A%0D%0ADato:%0D%0A%0D%0AProsjekttittel:%0D%0A%0D%0AProsjektbeskrivelse:%0D%0A">
+                Send prosjektforespørsel
+            </a>
 
             <!-- Kontaktinformasjon -->
 
@@ -123,14 +70,27 @@
                 <h2>Kontaktinformasjon</h2>
 
                 <p>
+                    Du kan også kontakte oss direkte
+                    via e-post eller telefon.
+                </p>
+
+                <p>
                     <strong>E-post:</strong>
-                    <a href="mailto:henriksen@gmail.com">
-                        henriksen@gmail.com
+                    <a href="mailto:henriksenlyd@gmail.com">
+                        henriksenlyd@gmail.com
                     </a>
                 </p>
 
                 <p>
-                    <strong>Org.nr:</strong> 931 764 551
+                    <strong>Telefon:</strong>
+                    <a href="tel:+4793820893">
+                        +47 938 20 893
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Org.nr:</strong>
+                    931 764 551
                 </p>
 
             </div>
@@ -142,10 +102,11 @@
     <!-- Footer -->
 
     <footer>
-        <p>&copy; 2026. Alle rettigheter forbeholdt.</p>
+        <p>
+            &copy; 2026 Henriksen Lyd- og Sceneproduksjon.
+            Alle rettigheter forbeholdt.
+        </p>
     </footer>
-
-<script src="scripts/form_validation.js"></script>
 
 </body>
 </html>
