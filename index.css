@@ -66,6 +66,7 @@ body {
     align-items: center;
     gap: 40px;
     list-style: none;
+    margin: 0px;
 }
 
 .nav-links a {
@@ -682,12 +683,8 @@ button:focus-visible {
         padding: 15px 20px;
     }
 
-    .logo-name {
-        font-size: 23px;
-    }
-
-    .logo-subtitle {
-        font-size: 10px;
+    .nav-logo {
+    width: 100px;
     }
 
     .menu-toggle {
