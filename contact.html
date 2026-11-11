@@ -8,28 +8,19 @@
 
     <title>Kontakt | Henriksen Lyd- og Sceneproduksjon</title>
 
-    <!-- Felles CSS-fil -->
+    <!-- Felles CSS -->
     <link rel="stylesheet" href="index.css">
 
+    <!-- Felles navigasjonsmeny -->
+    <script src="scripts/menu.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header og navigasjon -->
-
-    <header>
-        <h1>Henriksen Lyd- og Sceneproduksjon</h1>
-
-        <nav aria-label="Hovedmeny">
-            <a href="index.html">Hjem</a>
-            <a href="information.html">Informasjon</a>
-            <a href="portfolio.html">Portefølje</a>
-            <a href="contact.html" aria-current="page">Kontakt</a>
-        </nav>
-    </header>
+    <!-- Felles header og navigasjonsmeny -->
+    <header id="navbar" class="navbar"></header>
 
     <!-- Hovedinnhold -->
-
     <main>
 
         <section class="contact">
@@ -56,12 +47,12 @@
             </p>
 
             <!-- Mailto-knapp -->
-
             <a
                 class="mailto-knapp"
                 href="mailto:henriksenlyd@gmail.com?subject=Prosjektforesp%C3%B8rsel&amp;body=Navn:%0D%0A%0D%0ADato:%0D%0A%0D%0AProsjekttittel:%0D%0A%0D%0AProsjektbeskrivelse:%0D%0A">
                 Send prosjektforespørsel
             </a>
+
 
             <!-- Kontaktinformasjon -->
 
