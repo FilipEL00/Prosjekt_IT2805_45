@@ -24,6 +24,7 @@ body {
     background-color: #000000;
     color: #FFFFFF;
     z-index: 1000;
+    white-space: nowrap;
 }
 
 .nav-container {
