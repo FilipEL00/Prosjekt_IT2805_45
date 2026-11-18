@@ -16,6 +16,12 @@ body {
     line-height: 1.5;
 }
 
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Navigasjonsmeny */
 .navbar {
     position: sticky;
@@ -318,6 +324,7 @@ footer {
     background-color: #000000;
     color: #FFFFFF;
 
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;

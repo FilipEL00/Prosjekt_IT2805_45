@@ -6,36 +6,38 @@
 </head>
 <html>
     <body>
-        <!-- Navbar lages her fra nav.js -->
-        <header id="navbar" class="navbar"></header>
+        <div class="main-container">
+            <!-- Navbar lages her fra nav.js -->
+            <header id="navbar" class="navbar"></header>
 
-        <!-- Informasjons seksjon -->
-        <main class="inf-seksjon">
-            <div class="inf-tekst">
-                <h1 class="inf-titel">OM MEG</h1>
-                <p>Navn: Thor Håkon Henriksen</p>
-                <p>Hei jeg er en hyggelig å vennlig kar som gjør ting og tang. Jobbet som lydteknikker på studentsamfundet i Trondheim Bla bla bla. Det er litt om meg. 
-                    Sjekk ut arbeidet mitt under CV/ portefølje. Og ta kontakt om du har noen spørsmål!</p>
-            </div>
-            <div class="inf-bilde-boks">
-                <img src="images/Thor_Portrett.jpeg" alt="Bilde av Thor" class="inf-bilde">
-            </div>
-        </main>
-        <!-- Bildekarusell seksjon, skal flyttes til forsiden -->
-        <div class="karusell">
-            <img src="images/eksempel_bilde1.jpg" alt="Bilde 1" class="karusell-bilde aktiv">
-            <img src="images/eksempel_bilde2.jpg" alt="Bilde 2" class="karusell-bilde">
-            <img src="images/eksempel_bilde3.jpg" alt="Bilde 3" class="karusell-bilde">
+            <!-- Informasjons seksjon -->
+            <main class="inf-seksjon">
+                <div class="inf-tekst">
+                    <h1 class="inf-titel">OM MEG</h1>
+                    <p>Navn: Thor Håkon Henriksen</p>
+                    <p>Hei jeg er en hyggelig å vennlig kar som gjør ting og tang. Jobbet som lydteknikker på studentsamfundet i Trondheim Bla bla bla. Det er litt om meg. 
+                        Sjekk ut arbeidet mitt under CV/ portefølje. Og ta kontakt om du har noen spørsmål!</p>
+                </div>
+                <div class="inf-bilde-boks">
+                    <img src="images/Thor_Portrett.jpeg" alt="Bilde av Thor" class="inf-bilde">
+                </div>
+            </main>
+            <!-- Bildekarusell seksjon, skal flyttes til forsiden -->
+            <div class="karusell">
+                <img src="images/eksempel_bilde1.jpg" alt="Bilde 1" class="karusell-bilde aktiv">
+                <img src="images/eksempel_bilde2.jpg" alt="Bilde 2" class="karusell-bilde">
+                <img src="images/eksempel_bilde3.jpg" alt="Bilde 3" class="karusell-bilde">
 
-            <button class="karusell-knapp" id="forrige">Forrige</button>
-            <button class="karusell-knapp" id="neste">Neste</button>
+                <button class="karusell-knapp" id="forrige">Forrige</button>
+                <button class="karusell-knapp" id="neste">Neste</button>
+            </div>
+            <script src="scripts/image_carousel.js"></script>
+            <!-- Nederste del av nettsiden -->
+            <footer>
+                <p>Henriksen Lyd- og Sceneproduksjon</p>
+                <p>Org.nr: 931 764 551</p>
+                <p>e-post: henriksenlyd@gmail.com</p>
+            </footer>
         </div>
-        <script src="scripts/image_carousel.js"></script>
-        <!-- Nederste del av nettsiden -->
-        <footer>
-            <p>Henriksen Lyd- og Sceneproduksjon</p>
-            <p>Org.nr: 931 764 551</p>
-            <p>e-post: henriksenlyd@gmail.com</p>
-        </footer>
     </body>
 </html>
