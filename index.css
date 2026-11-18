@@ -334,18 +334,7 @@ footer p {
 
 
 /* Mobiltilpasning */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-    }
-
+@media (max-width: 850px) {
     .ind-hero h1 {
         font-size: 32px;
     }
@@ -841,43 +830,6 @@ button:focus-visible {
 }
 
 /* =====================================
-   MAILTO BUTTON
-   ===================================== */
-
-.mailto-knapp {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 15px 0;
-
-    background-color: #000000;
-    color: #ffffff;
-
-    text-decoration: none;
-    border-radius: 5px;
-
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-
-    transition: background-color 0.2s;
-}
-
-/* Button hover */
-
-.mailto-knapp:hover {
-    background-color: #444444;
-    color: #ffffff;
-}
-
-/* Keyboard accessibility */
-
-.mailto-knapp:focus-visible {
-    background-color: #444444;
-    outline: 3px solid #4a90e2;
-    outline-offset: 3px;
-}
-
-/* =====================================
    CONTACT INFORMATION
    ===================================== */
 
@@ -975,15 +927,6 @@ button:focus-visible {
         font-size: 15px;
     }
 
-    /* Full-width mailto button */
-
-    .mailto-knapp {
-        display: block;
-        width: 100%;
-        padding: 14px 15px;
-        font-size: 15px;
-    }
-
     .contact-info {
         margin-top: 25px;
         padding-top: 20px;
@@ -1017,11 +960,6 @@ button:focus-visible {
 
     .contact p {
         font-size: 14px;
-    }
-
-    .mailto-knapp {
-        font-size: 14px;
-        padding: 12px 10px;
     }
 
     .contact-info p {
