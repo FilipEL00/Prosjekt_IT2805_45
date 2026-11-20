@@ -21,6 +21,7 @@ body {
 .ind-portefolje p {
     margin-top: 0;
     margin-bottom: 10px;
+}
 .main-container {
     min-height: 100vh;
     display: flex;
