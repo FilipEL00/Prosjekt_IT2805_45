@@ -1,41 +1,51 @@
 <!DOCTYPE html>
+<html lang="no">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Om meg – Henriksen Lyd- og Sceneproduksjon</title>
+
     <link rel="stylesheet" href="index.css">
-    <!-- Navbar fra javascript -->
+
+    <!-- Javascript -->
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </head>
-<html>
     <body>
         <!-- Navbar lages her fra nav.js -->
         <header id="navbar" class="navbar"></header>
 
         <!-- Informasjons seksjon -->
         <main class="inf-seksjon">
-            <div class="inf-tekst">
-                <h1 class="inf-titel">OM MEG</h1>
-                <p>Navn: Thor Håkon Henriksen</p>
-                <p>Hei jeg er en hyggelig å vennlig kar som gjør ting og tang. Jobbet som lydteknikker på studentsamfundet i Trondheim Bla bla bla. Det er litt om meg. 
-                    Sjekk ut arbeidet mitt under CV/ portefølje. Og ta kontakt om du har noen spørsmål!</p>
-            </div>
-            <div class="inf-bilde-boks">
-                <img src="images/Thor_Portrett.jpeg" alt="Bilde av Thor" class="inf-bilde">
-            </div>
-        </main>
-        <!-- Bildekarusell seksjon, skal flyttes til forsiden -->
-        <div class="karusell">
-            <img src="images/eksempel_bilde1.jpg" alt="Bilde 1" class="karusell-bilde aktiv">
-            <img src="images/eksempel_bilde2.jpg" alt="Bilde 2" class="karusell-bilde">
-            <img src="images/eksempel_bilde3.jpg" alt="Bilde 3" class="karusell-bilde">
+            <h1 class="inf-titel">OM MEG</h1>
 
-            <button class="karusell-knapp" id="forrige">Forrige</button>
-            <button class="karusell-knapp" id="neste">Neste</button>
-        </div>
-        <script src="scripts/image_carousel.js"></script>
-        <!-- Nederste del av nettsiden -->
-        <footer>
-            <p>Henriksen Lyd- og Sceneproduksjon</p>
-            <p>Org.nr: 931 764 551</p>
-            <p>e-post: henriksenlyd@gmail.com</p>
-        </footer>
+            <div class="inf-tekst">
+                <img src="images/Thor_Portrett.jpeg"
+                    alt="Portrett av Thor Håkon Henriksen"
+                    class="inf-bilde">
+                <p>Hei! Mitt navn er Thor Håkon Henriksen.</p>
+                <p>Jeg jobber som frilans lydtekniker i Trondheim, og studerer ved NTNU. 
+                    Jeg begynte å jobbe som lydtekniker på Studentersamfundet i Trondhjem i 2022, 
+                    som del av et frivillig studentverv i den lydtekniske gjengen Forsterkerkomiteen.  
+                    I løpet av denne tiden har jeg jobbet på all slags arrangement fra debatter og konferanser til konserter og teater/revy.
+                </p>
+                <p>
+                    I 2025 var jeg Teknisk sjef for Forsterkerkomiteen v/ Studentersamfundet i Trondhjem, ISFiT-2025 og UKA 2025. 
+                    Da hadde jeg ansvar for all lydteknisk drift på Samfundet i 2025, inkludert verdens største internasjonale studentfestival og Norges største kulturfestival.
+                    Jeg gjorde teknisk advance med all produksjon som kom til Samfundet, samt innleie ved behov. 
+                    I tillegg hadde jeg ansvar for lydteknisk bemanning og prosjektplanlegging for små og store arrangementer.
+                </p>
+                <p>
+                    I 2023 opprettet jeg Henriksen Lyd- og Sceneproduksjon og har siden da jobbet med rigging og lydteknikk på ulike arrangementer.
+                    For mer info, ta gjerne en titt på CV/Portefølje! Du finner meg også på LinkedIn.
+                </p>
+                </div>
+        </main>
+
+        <!-- Footer genereres fra footer.js -->
+        <footer id="footer"></footer>
     </body>
 </html>
