@@ -7,53 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henriksen Lyd- og Sceneproduksjon</title>
     <link rel="stylesheet" href="index.css">
-    <!-- Navbar fra javascript -->
+    <!-- Javascript -->  
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
 </head>
 <body>
+    <div class="main-container">
 
-    <!-- Navbar lages her fra nav.js -->
-    <header id="navbar" class="navbar"></header>
+        <!-- Navbar lages her fra nav.js -->
+        <header id="navbar" class="navbar"></header>
 
-    <main>
+        <main>
 
-        <!-- Øverste del av forsiden -->
+            <!-- Øverste del av forsiden -->
 
 
-        <section class="ind-hero">
+            <section class="ind-hero">
 
-            <!-- Bakgrunnsvideo -->
-            <video class="hero-video"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="metadata"
-                aria-hidden="true">
-                <source src="images/VideoJoaosis720p.mp4" type="video/mp4">
-            </video>
+                <!-- Bakgrunnsvideo -->
+                <video class="hero-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    aria-hidden="true">
+                    <source src="images/VideoJoaosis720p.mp4" type="video/mp4">
+                </video>
 
-            <!-- Mørkt lag over videoen -->
-            <div class="hero-overlay"></div>
+                <!-- Mørkt lag over videoen -->
+                <div class="hero-overlay"></div>
 
-            <!-- Logo og tekst foran videoen -->
-            <div class="hero-content">
+                <!-- Logo og tekst foran videoen -->
+                <div class="hero-content">
 
-                <h1 class="visually-hidden">
-                    Henriksen Lyd- og Sceneproduksjon
-                </h1>
+                    <h1 class="visually-hidden">
+                        Henriksen Lyd- og Sceneproduksjon
+                    </h1>
 
-                <img
-                    src="Henriksen_logoer_SVG/Henriksen_hvit_logo_transparent.svg"
-                    alt=""
-                    class="hero-logo"
-                >
+                    <img
+                        src="Henriksen_logoer_SVG/Henriksen_hvit_logo_transparent.svg"
+                        alt=""
+                        class="hero-logo"
+                    >
 
-                <p>Lyd- og sceneteknikk i Trondheim.</p>
+                    <p>Lyd- og sceneteknikk i Trondheim.</p>
 
-            </div>
+                </div>
 
-        </section>
+            </section>
 
 
 
@@ -61,30 +64,64 @@
         <section class="ind-tjenester">
             <h2>Hva kan jeg tilby?</h2>
             <p>
-                Jeg tilbyr lydteknikk og scenetekniske tjenester
-                til konserter, konferanser og arrangementer. 
+                Jeg tilbyr lydteknikk og rigging
+                til konserter, konferanser og arrangementer.  Les mer inne på CV/Portefølje!
             </p>
             <p>
                 Trenger du hjelp til planlegging,
                 opprigg og utførelse av et prosjekt/arrangement, kontakt meg via kontaktskjema
                 eller send meg en e-post!
             </p>
+        
         </section>
 
         <!-- Tidligere arbeid -->
         <section class="ind-portefolje">
             <h2>Tidligere arbeid</h2>
-            <p>Jeg har jobbet på ulike arrangementer med og hos flere selskaper.</p>
+            <p>Jeg har jobbet på ulike arrangementer med og hos flere selskaper. 
+                Se bildekarusellen under for eksempler (under utvikling).</p>
+            
+            <!-- Bildekarusell -->
+            <div class="karusell">
+
+                <img src="images/eksempel_bilde1.jpg"
+                    alt="Bilde fra tidligere oppdrag"
+                    class="karusell-bilde aktiv">
+
+                <img src="images/eksempel_bilde2.jpg"
+                    alt="Bilde fra sceneproduksjon"
+                    class="karusell-bilde">
+
+                <img src="images/eksempel_bilde3.jpg"
+                    alt="Bilde fra arrangement"
+                    class="karusell-bilde">
+
+                <!-- Venstre pil -->
+                <button class="karusell-knapp forrige"
+                        id="forrige"
+                        type="button"
+                        aria-label="Forrige bilde">
+                    &#10094;
+                </button>
+
+                <!-- Høyre pil -->
+                <button class="karusell-knapp neste"
+                        id="neste"
+                        type="button"
+                        aria-label="Neste bilde">
+                    &#10095;
+                </button>
+
+            </div>
+        <script src="scripts/image_carousel.js"></script>
         </section>
 
     </main>
 
-    <!-- Nederste del av nettsiden -->
-    <footer>
-        <p>Henriksen Lyd- og Sceneproduksjon</p>
-        <p>Org.nr: 931 764 551</p>
-        <p>e-post: henriksenlyd@gmail.com</p>
-    </footer>
 
+    <!-- Footer genereres av footer.js -->
+    <footer id="footer"></footer>
+
+    </div>
 </body>
 </html>
