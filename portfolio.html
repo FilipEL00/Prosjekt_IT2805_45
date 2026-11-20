@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <!-- Navbar fra javascript -->
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/earlier_work.js" defer></script>
 </head>
 <body>
     <div class="main-container">
@@ -182,59 +183,98 @@
                             jeg har vært involvert i.
                         </p>
                     </div>
-
                     <div class="projects-grid">
+                        <!-- PROSJEKT 1 -->
                         <article class="project-card">
-                            <div class="project-image">
-                                <img src="images/prosjekt-1.jpg"
-                                    alt="Lydteknisk arbeid under en konsert"
-                                    loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <p class="project-category">KONSERT</p>
-                                <h3>Prosjektnavn 01</h3>
-                                <p>
-                                    Kort beskrivelse av arrangementet,
-                                    og hvilken rolle jeg hadde i
-                                    produksjonen.
-                                </p>
-                            </div>
+                            <button class="project-open-button" type="button">
+                                <div class="project-image">
+                                    <img src="images/prosjekt-1.jpg"
+                                        alt="Lydteknisk arbeid under en konsert"
+                                        loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">KONSERT</p>
+                                    <h3>Prosjektnavn 01</h3>
+                                    <p class="project-description"
+                                    data-full-description="Her skriver du en mer detaljert beskrivelse av konserten. Du kan fortelle om arrangementet, hvor det ble gjennomført, hvilket utstyr som ble brukt, og hvilken rolle du hadde i produksjonen.">
+                                        Kort beskrivelse av arrangementet,
+                                        og hvilken rolle jeg hadde i produksjonen.
+                                    </p>
+                                    <span class="project-read-more">
+                                        Les mer →
+                                    </span>
+                                </div>
+                            </button>
                         </article>
-                        <article class="project-card">
 
-                            <div class="project-image">
-                                <img src="images/prosjekt-2.jpg"
-                                    alt="Sceneoppsett og teknisk rigging"
-                                    loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <p class="project-category">SCENETEKNIKK</p>
-                                <h3>Prosjektnavn 02</h3>
-                                <p>
-                                    Kort beskrivelse av oppdraget,
-                                    teknisk arbeid og gjennomføring.
-                                </p>
-                            </div>
+                        <!-- PROSJEKT 2 -->
+                        <article class="project-card">
+                            <button class="project-open-button" type="button">
+                                <div class="project-image">
+                                    <img src="images/prosjekt-2.jpg"
+                                        alt="Sceneoppsett og teknisk rigging"
+                                        loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">SCENETEKNIKK</p>
+                                    <h3>Prosjektnavn 02</h3>
+                                    <p class="project-description"
+                                    data-full-description="Her kan du beskrive sceneoppsettet, riggingen, teknisk utstyr og hvordan arbeidet ble gjennomført. Du kan også beskrive ansvarsområdene dine under produksjonen.">
+                                        Kort beskrivelse av oppdraget,
+                                        teknisk arbeid og gjennomføring.
+                                    </p>
+                                    <span class="project-read-more">
+                                        Les mer →
+                                    </span>
+                                </div>
+                            </button>
                         </article>
-                        <article class="project-card">
 
-                            <div class="project-image">
-                                <img src="images/prosjekt-3.jpg"
-                                    alt="Lydutstyr under en produksjon"
-                                    loading="lazy">
-                            </div>
-                            <div class="project-info">
-                                <p class="project-category">PRODUKSJON</p>
-                                <h3>Prosjektnavn 03</h3>
-                                <p>
-                                    Kort beskrivelse av produksjonen
-                                    og arbeidet som ble utført.
-                                </p>
-                            </div>
+                        <!-- PROSJEKT 3 -->
+                        <article class="project-card">
+                            <button class="project-open-button" type="button">
+                                <div class="project-image">
+                                    <img src="images/prosjekt-3.jpg"
+                                        alt="Lydutstyr under en produksjon"
+                                        loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <p class="project-category">PRODUKSJON</p>
+                                    <h3>Prosjektnavn 03</h3>
+                                    <p class="project-description"
+                                    data-full-description="Her kan du skrive en mer utfyllende beskrivelse av produksjonen, hvilket teknisk arbeid som ble utført og hvilke oppgaver du hadde ansvar for.">
+                                        Kort beskrivelse av produksjonen
+                                        og arbeidet som ble utført.
+                                    </p>
+                                    <span class="project-read-more">
+                                        Les mer →
+                                    </span>
+                                </div>
+                            </button>
                         </article>
                     </div>
                 </div>
             </section>
+            <dialog id="project-dialog" class="project-dialog">
+                <button class="dialog-close"
+                        type="button"
+                        aria-label="Lukk prosjektvindu">
+                    &times;
+                </button>
+                <div class="dialog-content">
+                    <div class="dialog-image-container">
+                        <img class="dialog-image"
+                            src=""
+                            alt="">
+                    </div>
+                    <div class="dialog-info">
+                        <p class="dialog-category"></p>
+                        <h2 class="dialog-title"></h2>
+                        <p class="dialog-description"></p>
+                    </div>
+                </div>
+            </dialog>
+
             <!-- LAST NED CV -->
             <section class="cv-download-section">
 
